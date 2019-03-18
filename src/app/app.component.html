@@ -1,3 +1,6 @@
+<a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+  <a routerLink="/student" routerLinkActive="active">Sutdent List</a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
 <app-student-detail *ngIf="studentDetail" (close)="closeDetail()" [student]="studentDetail"></app-student-detail>
 <h2>Master data</h2>
 <app-student *ngFor="let student of students; let i = index" [student]="student" [idx]="i" (click)="getDetail(student)"></app-student>
